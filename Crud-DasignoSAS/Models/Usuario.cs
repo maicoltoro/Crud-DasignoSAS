@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Crud_DasignoSAS.Models
 {
-    [Table("Usuarios")]
     public class Usuario
     {
         [Key]
@@ -31,7 +30,7 @@ namespace Crud_DasignoSAS.Models
 
             RuleFor(x => x.Sueldo).NotNull().GreaterThan(0).WithMessage("El sueldo debe ser mayor a 0.");
 
-            RuleFor(x => x.FechaNacimiento).NotNull();            
+            RuleFor(x => x.FechaNacimiento).NotNull();
         }
     }
 }

@@ -1,5 +1,4 @@
 using Crud_DasignoSAS.Clases;
-using Crud_DasignoSAS.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;

@@ -5,12 +5,13 @@ namespace Crud_DasignoSAS.Clases
 {
     public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext() { }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
         {
         }
 
-        public DbSet<Usuario> Personas { get; set; }
+        public virtual DbSet<Usuario> Personas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

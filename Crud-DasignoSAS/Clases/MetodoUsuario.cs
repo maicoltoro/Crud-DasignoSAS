@@ -84,7 +84,7 @@ namespace Crud_DasignoSAS.Clases
         {
             try
             {
-                var datos = _context.Personas.Where(e => e.Id == id).FirstOrDefault();
+                var datos = _context.Personas.FirstOrDefault(e => e.Id == id);
                 if (datos != null)
                     return datos;
                 else
